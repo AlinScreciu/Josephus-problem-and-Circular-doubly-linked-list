@@ -22,7 +22,7 @@ void node::set(float data1)
 
 
 
-node* node::operator = (node* other)
+node* node::operator=(node* other)
 {
     if (this != other)
     {

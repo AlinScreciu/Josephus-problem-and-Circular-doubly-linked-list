@@ -20,7 +20,10 @@ int main()
     }
     system("cls");
     datab.print();
-    datab.list_3rd(&array[0]);
+    datab.remove_node(datab.list_3rd(&array[0]));
+    datab.print();
+
+
     /*l.insert
     * show
     * print

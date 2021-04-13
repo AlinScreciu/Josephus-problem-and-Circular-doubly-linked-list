@@ -5,9 +5,8 @@ void c_list::remove_node(node* to_remove) {
     to_remove->next = nullptr;
     to_remove->prev = nullptr;
     size = size - 1;
-    delete to_remove;
 }
-void c_list::list_3rd(node* given) const {
+node* c_list::list_3rd(node* given) const {
     int  i = 0;
     node* third;
     third = given;
@@ -17,6 +16,7 @@ void c_list::list_3rd(node* given) const {
         if (i == 2) std::cout << third->show();
         i++;
     }
+    return third;
 }
 void c_list::print() const {
     node* show;

@@ -12,6 +12,6 @@ public:
 	void show() const;
 	void insert( node * );
 	void print() const;
-	void list_3rd( node* ) const;
+	node* list_3rd( node* ) const;
 	void remove_node( node * );
 };
