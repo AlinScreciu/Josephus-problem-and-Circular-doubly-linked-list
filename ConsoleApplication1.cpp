@@ -1,5 +1,3 @@
-#include <iostream>
-#include "node.h"
 #include "c_list.h"
 int main()
 {   
@@ -17,6 +15,6 @@ int main()
 	std::cout << std::endl;
 	l.remove_node(&c);
 	l.print();
-	l.list_3rd(&c);
+	l.list_3rd(&b);
 
 }
