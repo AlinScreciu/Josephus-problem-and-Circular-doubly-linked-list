@@ -3,7 +3,8 @@
 using namespace std;
 
 int main()
-{
+{ // TO DO - > MAIN LOOP
+  // --------> REMOVE
     int sizeNR, i = 0;
     cout << "how many elements you want to add?\n"; cin >> sizeNR;
     c_list datab;
@@ -19,9 +20,9 @@ int main()
         i++;
     }
     system("cls");
-    datab.print();
+    datab.p_all();
     datab.remove_node(datab.list_3rd(&array[0]));
-    datab.print();
+    datab.p_all();
 
 
     /*l.insert
@@ -30,5 +31,4 @@ int main()
     * list_3rd
     * remove_node
     */
-
 }

@@ -11,7 +11,7 @@ public:
 	c_list(node* = nullptr, node* = nullptr);
 	void show() const;
 	void insert( node * );
-	void print() const;
+	void p_all() const;
 	node* list_3rd( node* ) const;
 	void remove_node( node * );
 };

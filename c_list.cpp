@@ -1,10 +1,6 @@
 #include "c_list.h"
 void c_list::remove_node(node* to_remove) {
-    to_remove->prev->next = to_remove->next;
-    to_remove->next->prev = to_remove->prev;
-    to_remove->next = nullptr;
-    to_remove->prev = nullptr;
-    size = size - 1;
+  //todo
 }
 node* c_list::list_3rd(node* given) const {
     int  i = 0;
@@ -13,12 +9,11 @@ node* c_list::list_3rd(node* given) const {
     third->next = given->next;
     while (i < 3) {
         third = third->next;
-        if (i == 2) std::cout << third->show();
+        if (i == 2) return third;
         i++;
     }
-    return third;
 }
-void c_list::print() const {
+void c_list::p_all() const {
     node* show;
     int i = 0;
     if (size != 0) {

@@ -1,6 +1,5 @@
 #include "node.h"
 #include <iostream>
-
 node::node(float data1, node* n, node* p) {
     data = data1;
     next = n;
@@ -14,14 +13,10 @@ node::node(const node& to_copy) {
 float node::show() const {
     return data;
 }
-
 void node::set(float data1)
 {
     data = data1;
 }
-
-
-
 node* node::operator=(node* other)
 {
     if (this != other)
