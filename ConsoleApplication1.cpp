@@ -14,8 +14,8 @@ int main()
         cin >> data;
         node* temp = new node;
         *temp = data;
-        datab.insert(temp);
         array[i] = temp;
+        datab.insert(&array[i]);
         i++;
     }
     system("cls");

@@ -26,8 +26,6 @@ node* node::operator = (node* other)
 {
     if (this != other)
     {
-        next = other->next;
-        prev = other->prev;
         data = other->data;
     }
     return this;

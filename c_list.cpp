@@ -9,7 +9,9 @@ void c_list::remove_node(node* to_remove) {
 }
 void c_list::list_3rd(node* given) const {
     int  i = 0;
-    node* third = given; 
+    node* third;
+    third = given;
+    third->next = given->next;
     while (i < 3) {
         third = third->next;
         if (i == 2) std::cout << third->show();
