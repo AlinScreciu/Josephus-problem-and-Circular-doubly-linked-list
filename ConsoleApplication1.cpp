@@ -1,20 +1,31 @@
 #include "c_list.h"
+#include <Windows.h>
+using namespace std;
+
 int main()
-{   
-	node a, b, c, d;
-	a = 10;
-	b = 20;
-	c = 30;
-	d = 40;
-	c_list l;
-	l.insert(&a);
-	l.insert(&b);
-	l.insert(&c);
-	l.insert(&d);
-	l.print();
-	std::cout << std::endl;
-	l.remove_node(&c);
-	l.print();
-	l.list_3rd(&b);
+{
+    int sizeNR, i = 0;
+    cout << "how many elements you want to add?\n"; cin >> sizeNR;
+    c_list datab;
+    float data;
+    node* array = new node[sizeNR];
+    while (i < sizeNR)
+    {
+        cin >> data;
+        node* temp = new node;
+        *temp = data;
+        datab.insert(temp);
+        array[i] = temp;
+        i++;
+    }
+    system("cls");
+    datab.print();
+    datab.list_3rd(&array[0]);
+    /*l.insert
+    * show
+    * print
+    * list_3rd
+    * remove_node
+    */
 
 }

@@ -1,11 +1,11 @@
 #include "c_list.h"
-
 void c_list::remove_node(node* to_remove) {
     to_remove->prev->next = to_remove->next;
     to_remove->next->prev = to_remove->prev;
     to_remove->next = nullptr;
     to_remove->prev = nullptr;
     size = size - 1;
+    delete to_remove;
 }
 void c_list::list_3rd(node* given) const {
     int  i = 0;
