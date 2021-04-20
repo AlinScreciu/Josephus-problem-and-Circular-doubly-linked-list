@@ -15,6 +15,7 @@ public:
 	void remove_node( node* );
 	node* get_first();
 	int get_index(node*);
-	node* get_node(int );
-	void josephus(int);
-};	
+	node* get_node(int);
+	void josephus(int, node*);
+	void populate_list(int);
+};

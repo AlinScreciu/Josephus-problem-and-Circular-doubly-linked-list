@@ -30,3 +30,15 @@ node* node::operator=(node* other)
     }
     return this;
 }
+node* node::_next() {
+    return next;
+}
+node* node::_prev() {
+    return prev;
+}
+void node::_next(node* next){
+    this->next = next;
+}
+void node::_prev(node* prev) {
+    this->prev = prev;
+}
