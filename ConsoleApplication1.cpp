@@ -2,25 +2,19 @@
 #include <Windows.h>
 using namespace std;
 
-int main()
-{ // TO DO - > MAIN LOOPd
-    int sizeNR, i = 0;
-    cout << "how many elements you want to add?\n"; cin >> sizeNR;
-    c_list datab;
-    float data;
-    node* array = new node[sizeNR];
-    while (i < sizeNR)
-    {
-        cin >> data;
-        node* temp = new node;
-        *temp = data;
-        array[i] = temp;
-        datab.insert(&array[i]);
-        i++;
-    }
 
-    datab.remove_node(datab.list_3rd(&array[0]));
-    system("cls");
-    datab.p_all();
+
+int main() 
+{ 
+    c_list test;
+    for (float i = 1.0f; i <= 41.0f; i++) 
+    {
+        node *t = new node;
+        *t = i;
+        test.insert(t);
+    }
+    test.josephus(3);
+    test.p_all();
     return 0;
-}
+} 
+ 

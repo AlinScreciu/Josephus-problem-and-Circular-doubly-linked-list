@@ -12,6 +12,9 @@ public:
 	void show() const;
 	void insert( node * );
 	void p_all() const;
-	node* list_3rd( node* ) const;
-	void remove_node( node * );
-};
+	void remove_node( node* );
+	node* get_first();
+	int get_index(node*);
+	node* get_node(int );
+	void josephus(int);
+};	
