@@ -18,4 +18,5 @@ public:
 	node* get_node(int);
 	void josephus(int, node*);
 	void populate_list(int);
+	void list_nth(int,node*);
 };

@@ -60,12 +60,13 @@ void c_list::p_all() const
 		show = first;
 		while (i < size)
 		{
-			std::cout << show->show() << "\t";
+			std::cout <<i<<") "<< show->show() << "\n";
 			show = show->_next();
 			i = i + 1;
 		}
 	}
-	else std::cout << "Empty";
+	else std::cout << "Empty\n";
+
 };
 void c_list::show() const {
 	if (size == 0) return;
@@ -127,7 +128,7 @@ void c_list::josephus(int key, node* given)
 		remove_node(temp->_prev());
 	}
 }
-void c_list::populate_list(int _size) 
+void c_list::populate_list(int _size)
 {
 	for (float i = 1.0f; i <= _size; i++)
 	{
@@ -135,4 +136,14 @@ void c_list::populate_list(int _size)
 		*t = i;
 		this->insert(t);
 	}
+}
+void c_list::list_nth(int nth,node* given)
+{
+	node* temp = new node;
+	temp = given;
+	for (int i = 0 ; i < nth-1; i++)
+	{
+		temp = temp->_next();
+	}
+	std::cout << temp->show()<<"\n";
 }
